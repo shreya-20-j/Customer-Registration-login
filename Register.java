@@ -25,36 +25,8 @@ public class Register extends HttpServlet {
 			String name=req.getParameter("name");
 			String place=req.getParameter("place");
 			String phone_number=req.getParameter("phone_number");
-//
-//			
-//			if (!password.equals(confirmPassword)) {
-//	            // Passwords don't match, show an error message
-//	            res.setContentType("text/html");
-//	            out.println("<html><head>");
-//				 out.println("<link rel='stylesheet' href='CSS/welcomestyle.css'>");
-//		            out.println("</head><body>");
-//		            out.println("<div class='popup'>");
-//		            out.println("<div class='imgbox'>");
-//		            out.println("<img src='Images/sorry.jpg' alt='Error Image' class='img'>");
-//		            out.println("</div>");
-//		            out.println("<div class='title'>");
-//		            out.println("<h3>Sorry</h3>");
-//		            out.println("</div>");
-//		            out.println("<p class='para'>Passwords do not match</p>");
-//		            out.println("<button class='button-ok' onclick='closePopup()'>OK</button>");
-//		            out.println("</div>");
-//		            out.println("<script>");
-//		            out.println("function closePopup() {");
-//		            out.println("    var popup = document.querySelector('.popup');");
-//		            out.println("    popup.style.display = 'none';");
-//		            out.println("}");
-//		            out.println("</script>");
-//		            out.println("</body></html>");
-//		            RequestDispatcher rd=req.getRequestDispatcher("/customerReg.jsp");
-//					rd.include(req, res);
-//	        }
-//			
-			   PreparedStatement stmt = null;
+	
+			PreparedStatement stmt = null;
 		        ResultSet rs = null;
 
 			try
